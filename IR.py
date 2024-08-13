@@ -1,5 +1,4 @@
 # libraies importation
-import numpy as np
 import pandas as pd
 
 class Searcher:
@@ -69,6 +68,7 @@ class Searcher:
 if __name__=='__main__':
     test = Searcher() # instantiate the Searcher class
     command = input('Enter a valid command: ') # command
+    #command = 'people and danger'
     inds = test.filter(command) # indexes resulting from the input command
     jokes = test.get_jokes(inds)
 
