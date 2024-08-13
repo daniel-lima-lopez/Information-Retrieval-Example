@@ -18,20 +18,20 @@ pip install nltk
 ```
 
 ## Method description
-Information retrieval is finding material that satisfies an information need. In this case, given a corpus of jokes, the information need is expressed by tokens or querey words and logical operators (AND, OR, NOT). 
+Information retrieval is finding material that satisfies an information need. In this case, given a corpus of jokes, the information need is expressed by tokens or query  words and logical operators (AND, OR, NOT). 
 
-To perform this task, it is construted a dictionary of terms, which contains every word in the corpus of jokes. Then, for each term, we have a set, denominated *posting*, that contains the indexes of the jokes where the term appers, this technique is called *inverted index*.
+To perform this task, it is constructed a dictionary of terms, which contains every word in the corpus of jokes. Then, for each term, we have a set, denominated *posting*, that contains the indexes of the jokes where the term appears, this technique is called *inverted index*.
 
-Once all postings are constructed, we can perform queries with terms of interst and logical operators.
+Once all postings are constructed, we can perform queries with terms of interest and logical operators.
 
 ## Examples of use
 The following examples can be executed in the notebook [examples.ipynb](examples.ipynb).
 
-We can performs simple commands executing [IR.py](IR.py):
+We can perform simple commands executing [IR.py](IR.py):
 ```bash
 python IR.py
 ```
-and introduce a valid command, considering common terms an logical operations in lower case (and, or, not):
+and introduce a valid command, considering common terms and logical operations in lower case (and, or, not):
 ```
 Enter a valid command: dog or cat and funny and not smoke
 
@@ -49,7 +49,7 @@ Results:
  - Only funny if you own a dog: I think my dog must have a very cold nose. Every time it walks into a room, all the other dogs sit down.
 ```
 
-It is posible to perform more complex commands with the `Searcher` class. For example, the command *(computer or laptop) and (sad or amazing)* can be executed by parts with set operations:
+It is possible to perform more complex commands with the `Searcher` class. For example, the command *(computer or laptop) and (sad or amazing)* can be executed by parts with set operations:
 ```python
 from IR import Searcher
 
